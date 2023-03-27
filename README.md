@@ -6,6 +6,12 @@ An application supplying back-end programming for an e-commerce site. It utilize
 
 ---
 
+## Walk through video
+
+https://drive.google.com/file/d/1WpgChJRFyPcgnc2BCkGzZ4zQNzfEkNhL/view?usp=sharing
+
+---
+
 ## Questions
 
 Reach me at the links below with additional questions:

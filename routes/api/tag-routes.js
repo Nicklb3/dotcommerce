@@ -6,11 +6,11 @@ const { Tag, Product, ProductTag } = require('../../models');
 router.get('/', async (req, res) => {
   try {
     const tagData = await Tag.findAll ({
-      attributes: ["id", "name"],
+      attributes: ["id", "tag_name"],
       include: [
         {
           model: Product,
-          attributes: ["id", "name", "price", "stock", "category_id"],
+          attributes: ["id", "product_name", "price", "stock", "category_id"],
           through: ProductTag
         },
       ],
@@ -28,11 +28,11 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const singleTag = await Tag.findByPk(req.params.id, {
-      attributes: ["id", "name"],
+      attributes: ["id", "tag_name"],
       include: [
         {
           model: Product,
-          attributes: ["id", "name", "price", "stock", "category_id"],
+          attributes: ["id", "product_name", "price", "stock", "category_id"],
           through: ProductTag
         },
       ],
